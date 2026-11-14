@@ -8,6 +8,17 @@ SigLevel = Optional TrustAll
 Server = https://raw.github.com/ccdale/$repo/main/any
 ```
 
+After adding the repository to `/etc/pacman.conf`, refresh the package databases
+and install Cliptube:
+
+```bash
+sudo pacman -Syu cliptube
+```
+
+`cliptube` replaces the older `python-cliptube` package and depends on
+`python-ccalogging` from this repository and `yt-dlp` from Arch's repositories.
+See the installed `/usr/share/doc/cliptube/README.md` for configuration.
+
 ## add/update package
 
 ```bash
